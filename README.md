@@ -19,5 +19,5 @@ The project's codebase utilizes Python, with a particular focus on the Tkinter l
 **Conclusion**
 This project serves as a valuable learning experience in GUI programming, offering insights into the intricacies of developing interactive applications. Through this endeavor, I have gained practical knowledge in designing visually appealing interfaces, implementing error handling strategies, and developing functions for essential calculator operations.
 
-![Sample Image]([https://github.com/SamyamCodesavvy/simple-calculator-application/blob/main/interface.png])
+![Sample Image]([interface.png])
 
