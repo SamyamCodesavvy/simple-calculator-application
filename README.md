@@ -16,7 +16,7 @@ The Simple Calculator App boasts several key features that contribute to its use
 **Implementation:**
 The project's codebase utilizes Python, with a particular focus on the Tkinter library for creating the GUI elements. Font styles and color variables are defined to create a visually appealing and cohesive design. The application's functionality is achieved through the implementation of functions such as clearing the display, undoing actions, handling button clicks, and evaluating mathematical expressions.
 
-**Conclusion**
+**Conclusion:**
 This project serves as a valuable learning experience in GUI programming, offering insights into the intricacies of developing interactive applications. Through this endeavor, I have gained practical knowledge in designing visually appealing interfaces, implementing error handling strategies, and developing functions for essential calculator operations.
 
 
