@@ -60,41 +60,167 @@ button_list = ["C l e a r   A l l", "U n d o", "7", "8", "9", "÷", "4", "5", "6
 # Creating buttons by looping through the list
 for each_button in button_list:
     if each_button == "C l e a r   A l l":
-        Button(root, text=each_button, width=11, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color2, foreground=bg_color4, activebackground=bg_color1, command=clear_all).grid(row=5, column=0, columnspan=2, ipadx=1, ipady=5, pady=20, padx=12)
+        Button(root,
+               text=each_button,
+               width=11,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color2,
+               foreground=bg_color4,
+               activebackground=bg_color1,
+               command=clear_all).grid(row=5, column=0, columnspan=2, ipadx=1, ipady=5, pady=20, padx=12)
     elif each_button == "U n d o":
-        Button(root, text=each_button, width=11, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color5, foreground=bg_color4, activebackground=bg_color1, command=lambda button=each_button: on_undo()).grid(row=5, column=2, columnspan=2, ipadx=1, ipady=5, pady=20, padx=12)
+        Button(root,
+               text=each_button,
+               width=11,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color5,
+               foreground=bg_color4,
+               activebackground=bg_color1,
+               command=lambda button=each_button: on_undo()).grid(row=5, column=2, columnspan=2, ipadx=1, ipady=5, pady=20, padx=12)
     elif each_button == "7":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=6, column=0)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=6, column=0)
     elif each_button == "8":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=6, column=1)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=6, column=1)
     elif each_button == "9":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=6, column=2)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3, bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=6, column=2)
     elif each_button == "÷":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=6, column=3)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=6, column=3)
     elif each_button == "4":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=7, column=0, pady=23)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=7, column=0, pady=23)
     elif each_button == "5":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=7, column=1, pady=23)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=7, column=1, pady=23)
     elif each_button == "6":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=7, column=2, pady=23)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=7, column=2, pady=23)
     elif each_button == "×":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=7, column=3, pady=23)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=7, column=3, pady=23)
     elif each_button == "1":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=8, column=0, pady=2)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=8, column=0, pady=2)
     elif each_button == "2":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=8, column=1, pady=2)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=8, column=1, pady=2)
     elif each_button == "3":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=8, column=2, pady=2)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=8, column=2, pady=2)
     elif each_button == "+":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=8, column=3, pady=2)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=8, column=3, pady=2)
     elif each_button == "0":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=9, column=0, pady=23)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=9, column=0, pady=23)
     elif each_button == ".":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=9, column=1, pady=23)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=9, column=1, pady=23)
     elif each_button == "=":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=calc_evaluate).grid(row=9, column=2, pady=23)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4, command=calc_evaluate).grid(row=9, column=2, pady=23)
     elif each_button == "–":
-        Button(root, text=each_button, width=4, font=(fontname2, 15, "bold"), borderwidth=3, bg=bg_color3, foreground=bg_color4, command=lambda button=each_button: on_click(button)).grid(row=9, column=3, pady=10)
+        Button(root,
+               text=each_button,
+               width=4,
+               font=(fontname2, 15, "bold"),
+               borderwidth=3,
+               bg=bg_color3,
+               foreground=bg_color4,
+               command=lambda button=each_button: on_click(button)).grid(row=9, column=3, pady=10)
 # Setting the window position on screen and starting the main event loop
 root.geometry("+420+80")
 root.mainloop()
