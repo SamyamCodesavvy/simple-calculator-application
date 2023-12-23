@@ -1,4 +1,4 @@
-dDevelopment of a GUI-Based Simple Calculator App using Python and Tkinter library
+#Development of a GUI-Based Simple Calculator App using Python and Tkinter library
 
 **Introduction:**
 The Simple Calculator App project represents a significant milestone in my journey as a Python Developer, providing hands-on experience in GUI programming. Leveraging the Tkinter library, this application showcases a user-friendly interface for performing basic arithmetic operations.
